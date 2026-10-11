@@ -1,0 +1,38 @@
+/* Universal Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    border: 10px solid #2c3e50;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 1. Content-Box (Width adds padding & borders on top of declared width) */
+.content-box-example {
+    box-sizing: content-box;
+    background-color: #e74c3c;
+}
+
+/* 2. Border-Box (Width absorbs padding & borders internally) */
+.border-box-example {
+    box-sizing: border-box;
+    background-color: #2ecc71;
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.swatch-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.swatch {
+    width: 160px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 1. Named Color */
+.named {
+    background-color: tomato;
+}
+
+/* 2. HEX Color */
+.hex {
+    background-color: #3498db;
+}
+
+/* 3. RGB Color */
+.rgb {
+    background-color: rgb(46, 204, 113);
+}
+
+/* 4. RGBA Color with Alpha */
+.rgba {
+    background-color: rgba(155, 89, 182, 0.7);
+}
+
+/* Comparison section */
+.comparison-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 280px;
+    height: 160px;
+    padding: 20px;
+    border: 2px solid #333;
+    font-weight: bold;
+}
+
+/* Opacity cascades to all children (fades text too) */
+.opacity-box {
+    background-color: #e74c3c;
+    opacity: 0.5; 
+}
+
+/* RGBA affects only its background property (text remains fully opaque) */
+.rgba-box {
+    background-color: rgba(231, 76, 60, 0.5);
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.shapes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Base shape styling */
+.shape {
+    background-color: #3498db;
+}
+
+/* 1. Square */
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+/* 2. Rectangle */
+.rectangle {
+    width: 180px;
+    height: 100px;
+}
+
+/* 3. Perfect Circle */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+}
+
+/* 4. Capsule Pill */
+.capsule {
+    width: 180px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: #2ecc71;
+}
+
+/* 5. CSS Triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    background-color: transparent; /* Must be transparent */
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 90px solid #f1c40f;
+}
